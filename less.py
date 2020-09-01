@@ -70,7 +70,8 @@ while True:
 				print("[ENABLING]")
 				driver.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div[3]/c-wiz/div/div[3]/div[1]/div/div/div/div[2]/div').click()
 				driver.close()
-			else:print('Already Enabled	')
+			else:
+				print('Already Enabled	')
 				driver.close()
 		else:
 			driver.get('https://myaccount.google.com/lesssecureapps?pli=1')
@@ -80,7 +81,8 @@ while True:
 			print("[ENABLING]")
 			driver.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div[3]/c-wiz/div/div[3]/div[1]/div/div/div/div[2]/div').click()
 			driver.close()
-		else:print('Already Enabled	')
+		else:
+			print('Already Enabled	')
 			driver.close()
 	if (result != -1):
 		WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="accept"]'))).click()
@@ -91,8 +93,9 @@ while True:
 			print("[ENABLING]")
 			driver.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div[3]/c-wiz/div/div[3]/div[1]/div/div/div/div[2]/div').click()
 			driver.close()
-		else:print('Already Enabled	')
-		driver.close()
+		else:
+			print('Already Enabled	')
+			driver.close()
 	else:
 		driver.get('https://myaccount.google.com/lesssecureapps?pli=1')
 		content=driver.page_source
