@@ -16,7 +16,6 @@ def clear():
     # for mac and linux(here, os.name is 'posix') 
     else: 
         _ = system('clear') 
-init()
 clear()
 print("\n")
 print(" [ + ] GOOGLE AUTO LESS SECURE - SELENIUM")
